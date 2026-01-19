@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.counter-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.counter-display {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.buttons button {
+    font-size: 2rem;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#resetBtn {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+#resetBtn:hover {
+    background-color: #ff6659;
+}
+
+#themeBtn {
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .buttons button {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+body.dark-theme .buttons button:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+body.dark-theme #resetBtn {
+    background-color: #f44336;
+}
+
+body.dark-theme #resetBtn:hover {
+    background-color: #ff6659;
+}
+
+body.dark-theme #themeBtn {
+    background-color: #ffffff;
+    color: #000000;
+}

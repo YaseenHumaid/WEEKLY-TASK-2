@@ -1,0 +1,111 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+body.light {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #000;
+}
+
+.todo-card {
+  width: 420px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+body.light .todo-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.mode-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.custom-input {
+  border-radius: 12px 0 0 12px;
+  border: none;
+}
+
+.add-btn {
+  border-radius: 0 12px 12px 0;
+  background: #4facfe;
+  color: white;
+  font-size: 22px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 3px;
+  border: none;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  color: inherit;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: rgba(255,255,255,0.12);
+  padding: 10px 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.actions button {
+  border: none;
+  margin-left: 5px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #fbc531;
+}
+
+.delete {
+  background: #e84118;
+  color: white;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}

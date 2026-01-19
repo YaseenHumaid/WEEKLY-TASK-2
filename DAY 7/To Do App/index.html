@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="todo-card">
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4>📝 My Tasks</h4>
+        <button class="mode-btn" onclick="toggleTheme()">🌙</button>
+      </div>
+
+      <div class="input-group mb-2">
+        <input type="text" id="taskInput" class="form-control custom-input" placeholder="Add a new task">
+        <button class="btn add-btn" onclick="addTask()">+</button>
+      </div>
+      <small id="errorMsg" class="text-danger d-none">Task cannot be empty</small>
+
+      <div class="filters my-3">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <div class="counter">
+        <span>Total: <b id="total">0</b></span>
+        <span>Done: <b id="completed">0</b></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
